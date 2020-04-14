@@ -11,11 +11,11 @@ version := "0.3"
 
 scalaVersion := "2.13.1"
 
-crossScalaVersions := Seq("2.11.8", "2.12.4", "2.13.1")
+crossScalaVersions := Seq("2.12.10", "2.13.1")
 
 libraryDependencies ++= Seq(
-  "org.scala-js" %%% "scalajs-dom" % "0.9.8",
-  "org.querki" %%% "querki-jsext" % "0.9"
+  "org.scala-js" %%% "scalajs-dom" % "1.0.0",
+  "org.querki" %%% "querki-jsext" % "0.10"
 )
 
 pomExtra in Global := {

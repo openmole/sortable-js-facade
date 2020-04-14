@@ -3,7 +3,7 @@ package net.scalapro.sortable
 import org.scalajs.dom._
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.{JSGlobal, JSName, ScalaJSDefined}
+import scala.scalajs.js.annotation.{JSGlobal, JSName}
 import scala.scalajs.js.|
 import org.querki.jsext._
 
