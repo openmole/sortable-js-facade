@@ -8,7 +8,7 @@ name := "Sortable JS Facade"
 normalizedName := "sortable-js-facade"
 organization := "org.openmole"
 
-version := "0.6"
+version := "0.7"
 
 scalaVersion := "2.13.2"
 
