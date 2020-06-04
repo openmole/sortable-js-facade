@@ -8,7 +8,7 @@ name := "Sortable JS Facade"
 normalizedName := "sortable-js-facade"
 organization := "org.openmole"
 
-version := "0.7"
+version := "0.7.2"
 
 scalaVersion := "2.13.2"
 
@@ -39,7 +39,6 @@ releasePublishArtifactsAction := PgpKeys.publishSigned.value
 releaseVersionBump := sbtrelease.Version.Bump.Minor
 releaseTagComment := s"Releasing ${(version in ThisBuild).value}"
 releaseCommitMessage := s"Bump version to ${(version in ThisBuild).value}"
-releaseCrossBuild := true
 sonatypeProfileName := organization.value
 publishConfiguration := publishConfiguration.value.withOverwrite(true)
 
@@ -56,7 +55,7 @@ releaseProcess := Seq[ReleaseStep](
   runTest,
   //setReleaseVersion,
   tagRelease,
-  releaseStepCommand("publishSigned"),
+  releaseStepCommand("+publishSigned"),
   releaseStepCommand("sonatypeBundleRelease"),
   setNextVersion,
   commitNextVersion,
